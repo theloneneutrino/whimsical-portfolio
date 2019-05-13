@@ -1,0 +1,25 @@
+body {
+    margin: 10px;
+}
+
+aside, body {
+    background-size: cover;
+    background-attachment: local;
+}
+
+aside {
+    background-image: url(../img/blue-suede.jpg);
+    position: fixed;
+    z-index: 10;
+    border-radius: 17px; 
+    width: 144px;
+}
+
+main {
+    margin-left: 120px;
+    padding: 4px;
+}
+
+main > div {
+    height: 100vh;
+}
