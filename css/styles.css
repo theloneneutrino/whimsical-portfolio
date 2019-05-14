@@ -1,0 +1,64 @@
+body {
+    background-image: url(../img/graph-background.jpg);
+    background-size: contain;
+    font-family: cursive;
+}
+
+aside {
+    z-index: 10;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-image: url(../img/blue-suede.jpg);
+    border-radius: 5px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+}
+
+#home img {
+    width: 400px;
+}
+
+#home img {
+    filter: invert(100);
+}
+
+/* contact section */
+
+.contact_bottom {
+	background-image: url(../img/psychedelic.jpg);
+    background-size: contain;
+    color: #fff;
+	border: 1px solid;
+	border-radius: 45px;
+    filter: invert(80)
+}
+
+.contact_form form {
+	padding: 5% 0;
+}
+
+.contact_form span {
+
+}
+
+#contact h1 {
+	color: transparent;
+	-webkit-text-stroke: 4px #f5f5f5;
+	font-weight: 700;
+}
+
+.requiredStar::after{
+	content: '*' 
+}
