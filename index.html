@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>My Portfolio.</title>
+        <script src="js/Chart.min.js"></script>
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -92,11 +93,23 @@
                 <p><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum iure amet, ut tenetur sequi ex doloremque praesentium soluta illum.</a></p>
             </div>
             <div class="col-sm-12 col-md-4 text-center">
-                <a href=""><i class="fab four fas fa-facebook"></i></a>
+                <button onclick="grey()">Toggle greyscale!</button>
             </div>
             <div class="col-sm-12 col-md-4 text-center">
-                <p><a href="">&copy; Luke Warkentin; all flower power reserved.</a><i class="fas fa-peace"></i></p>
+                <p><a href="#">&copy; Luke Warkentin; all flower power reserved.</a><i class="fas fa-peace"></i></p>
             </div>
         </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script>
+            function grey(){
+                if(document.body.style.filter === "grayscale(100%)"){
+                    document.body.style.filter = "grayscale(0%)"
+                }
+                else{
+                    document.body.style.filter = "grayscale(100%)"
+                }
+            }
+        </script>
     </body>
 </html>

@@ -1,7 +1,17 @@
+@font-face {
+    font-family: handwriting;
+    src: url(../fonts/handwriting.eot);
+    src: url(../fonts/handwriting.svg);
+    src: url(../fonts/handwriting.ttf);
+    src: url(../fonts/handwriting.woff2);
+    font-weight:400;
+}
+
 body {
+    background-color: #eee;
     background-image: url(../img/graph-background.jpg);
     background-size: contain;
-    font-family: cursive;
+    font-family: handwriting, cursive;
 }
 
 aside {
@@ -11,6 +21,12 @@ aside {
     right: 10px;
     background-image: url(../img/blue-suede.jpg);
     border-radius: 5px;
+}
+
+
+
+.greyscale {
+    filter: grayscale(100);
 }
 
 a, a:hover {
