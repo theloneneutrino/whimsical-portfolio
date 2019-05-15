@@ -1,9 +1,9 @@
 @font-face {
     font-family: handwriting;
-    src: url(../fonts/handwriting.eot);
-    src: url(../fonts/handwriting.svg);
-    src: url(../fonts/handwriting.ttf);
-    src: url(../fonts/handwriting.woff2);
+    src: url(../fonts/handwriting/handwriting.eot);
+    src: url(../fonts/handwriting/handwriting.svg);
+    src: url(../fonts/handwriting/handwriting.ttf);
+    src: url(../fonts/handwriting/handwriting.woff2);
     font-weight:400;
 }
 
@@ -11,7 +11,8 @@ body {
     background-color: #eee;
     background-image: url(../img/graph-background.jpg);
     background-size: contain;
-    font-family: handwriting, cursive;
+    font-family: sans-serif;
+    font: bold;
 }
 
 aside {
@@ -21,12 +22,6 @@ aside {
     right: 10px;
     background-image: url(../img/blue-suede.jpg);
     border-radius: 5px;
-}
-
-
-
-.greyscale {
-    filter: grayscale(100);
 }
 
 a, a:hover {
@@ -52,13 +47,13 @@ ul {
 
 /* contact section */
 
-.contact_bottom {
-	background-image: url(../img/psychedelic.jpg);
+.contact_form {
+	background-color: #cd5c5c;
     background-size: contain;
     color: #fff;
 	border: 1px solid;
 	border-radius: 45px;
-    filter: invert(80)
+    filter: invert(50)
 }
 
 .contact_form form {
@@ -73,4 +68,14 @@ ul {
 
 .requiredStar::after{
 	content: '*' 
+}
+
+#playground {
+    -webkit-user-modify: read-write;
+}
+
+/* about me section */
+
+#about div:nth-child(2) > h2 {
+    font-family: handwriting;
 }
