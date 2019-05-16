@@ -8,20 +8,33 @@
 }
 
 body {
-    background-color: #eee;
-    background-image: url(../img/graph-background.jpg);
+    overflow-x: hidden;
+    background-image: url(../img/);
+    color: #4a4f53;
     background-size: contain;
     font-family: sans-serif;
     font: bold;
 }
 
 aside {
-    z-index: 10;
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: -180px;
+    z-index: 10;
+}
+
+aside {
     background-image: url(../img/blue-suede.jpg);
     border-radius: 5px;
+    transition: 1.5s;
+}
+
+aside {
+
+}
+
+aside:hover {
+    right: 10px;
 }
 
 a, a:hover {
@@ -37,23 +50,29 @@ ul {
     margin: 10px;
 }
 
+/* #home section */
+
+#home > div {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+    vertical-align: bottom;
+}
+
 #home img {
     width: 400px;
+    filter: invert(100%);
+    vertical-align: baseline;
 }
 
-#home img {
-    filter: invert(100);
-}
-
-/* contact section */
+/* #contact section */
 
 .contact_form {
-	background-color: #cd5c5c;
+	background-color: #257;
     background-size: contain;
-    color: #fff;
+    color: #ffe866;
 	border: 1px solid;
 	border-radius: 45px;
-    filter: invert(50)
 }
 
 .contact_form form {
@@ -70,12 +89,23 @@ ul {
 	content: '*' 
 }
 
-#playground {
-    -webkit-user-modify: read-write;
-}
-
 /* about me section */
 
-#about div:nth-child(2) > h2 {
+#about div {
+    background-color:#257;
+    color: #ffe866;
+}
+
+.col-sm-5 {
+    color: #257;
+}
+
+.col-sm-5 > h2 {
     font-family: handwriting;
+    transition-duration: 0.5s;
+}
+
+.col-sm-5 > h2:hover {
+    
+    color: #257c;
 }

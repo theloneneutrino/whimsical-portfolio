@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" contenteditable="false">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +9,53 @@
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="img/2786liw-monogram.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="img/2786liw-monogram.ico" type="image/x-icon"/>
     </head>
     <body>
-        <aside>
+        <div id="top"></div>
+        <!-- <aside>
             <ul>
                 <li> <a href="#about">About</a> -</li>
                 <li><a href="#home">Home</a> -</li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#playground">Playground</a></li>
+            </ul>
+        </aside> -->
+        <aside>
+            <ul>
+                <li><a href="#top" accesskey="d">Go to top (alt-shift-d)</a></li>
+                <li><a href="#bottom" accesskey="x">Go to bottom (alt-shift-x)</a></li>
             </ul>
         </aside>
         <div id="about">
-            <div class="bk_img">
+            <div>
                 <div class="col-sm-12 col-md-6 text-center">
                     <h2>About me!</h2>
                 </div>
                 <div class="col-sm-12 col-md-6 text-center">
                     <h2>Luke Warkentin</h2>
                 </div>
-                <div class="col-sm-12 col-md-6 col-md-offset-3 text-center">
-                    <p>Here comes the sun, and I say, this is my website! Luke Warkentin is an individual who likes coding, listening to The Beatles, Bee Gees, and Pink Floyd; enjoys pianos and pizza; and is a fun-loving guy.</p>
+                <div class="col-sm-12 col-md-12 text-center">
+                    <p>I have been interested in computers and coding since I was 4. Not long after that, I began exploring the source code of websites. Soon after, I began using Khan Academy to learn programming. Through classes at Bitwise, I fine tuned my use of HTML, CSS, and JavaScript. Here, I am showcasing my web development and design skills. I used Bootstrap to center all of the text and make the columns, as well as this "About Me" section.</p>
                 </div>
             </div>
         </div>
         <div id="home" class="text-center">
-            
             <div class="col-sm-12 col-md-4">
                 <img src="img/my-genealogy.png" alt="My Genealogy">
                 <h2><a href="https://theloneneutrino.github.io/genealogy-site/">My genealogy site!</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ab quos, sapiente nulla earum eius excepturi quibusdam in voluptate, consequatur nesciunt saepe impedit repellat laboriosam necessitatibus eaque vel, itaque dignissimos!</p>
+                <p>I created this genealogy site for my mom. I used positioning and clever use of divs to make a genealogy tree; a media page with three columns with media (no duh - that's why it's called a media page) in them; and a fun homepage with centered text.</p>
             </div>
             <div class="col-md-12 col-md-4">
                 <img src="img/pet-store.png" alt="Pet Store">
                 <h2><a href="https://theloneneutrino.github.io/mfw-pet-store/">My pet store</a></h2>
-                <p>The days of wine and roses pet-stores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni consectetur voluptas nemo molestias ipsa? Hic sint animi facilis placeat accusamus.</p>
+                <p>The days of wine and roses pet-stores. I used Bootstrap to create 90% of the website. The navbar, jumbotron, and lists are all Bootstrap.</p>
             </div>
             <div class="col-md-12 col-md-4">
                 <img src="img/restaurante.png" alt="Restaurante">
                 <h2><a href="https://theloneneutrino.github.io/octo-palm-tree/">Restaurante</a></h2>
-                <p>Everbody's somebody's fool, and this is my Restaurante website! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit dolorum laborum id officiis labore eos repellat possimus, sint mollitia consequuntur!</p>
+                <p>This is my Restaurante website! I used bootstrap on this website. I used a carousel, My menu uses Bootstra,</p>
             </div>
         </div>
         <div id="contact" class="col-md-offset-2">
@@ -67,39 +76,35 @@
                                         <div class="form-group"><label for="name">Message: <span class="requiredStar"><textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Message"></textarea></label></div>
                                         <div class="checkbox"><label for=""><input type="checkbox">I'm not a robot.</label></div>
                                         <a id="form-submit" type="submit" class="btn btn-default center-block" onclick="submitForm();">Send a message</a>
-                                        <p class="text-center" id="contact_fine_print">All fields marked <span class="requiredStar"></span> are mandatory.</p>
+                                        <p class="text-center" id="contact_fine_print">All fields marked <span class="requiredStar"></span> are mandatory. Do not send confidential information in this form. The content of the message is unencrypted, and can easily be snooped.</p>
                                     </form>
                                 </div>
                             </div>
                             <div class="col-sm-5">
-                                <address>
-                                    <strong class="text-uppercase">I'll be reaching out!</strong>
-                                    <br>
-                                    123 Fulton St.
-                                    <br>
-                                        Fresno, CA 93728<br>P: <a href="tel:5598675309">(559) 867-5309</a>
-                                </address>
+                                <p><strong class="text-uppercase">Looking forward to helping with your website needs.</strong></p>
+                                <h2>Luke Warkentin</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="playground" class="text-center">
+        <div id="playground" class="text-center" contenteditable="true">
             <h2>Editable playground!</h2>
-            <p>You can edit this text if you use Chrome or Safari >= 3!</p>
+            <p>You can edit this text! Try it!</p>
         </div>
         <footer class="bk_img">
             <div class="col-sm-12 col-md-4 text-center">
-                <p><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur laborum iure amet, ut tenetur sequi ex doloremque praesentium soluta illum.</a></p>
+                <p><a href=""> I used JavaScript enable the form to send an email, and to make the greyscale button work.</a></p>
             </div>
             <div class="col-sm-12 col-md-4 text-center">
-                <button onclick="grey()">Toggle greyscale!</button>
+                <button onclick="grey()">Toggle greyscale! <i class="fas fa-peace"></i></button>
             </div>
             <div class="col-sm-12 col-md-4 text-center">
-                <p><a href="#">&copy; Luke Warkentin; all flower power reserved.</a><i class="fas fa-peace"></i></p>
+                <p><a href="#">&copy; Luke Warkentin; 2019 All rights reserved.</a></p>
             </div>
         </footer>
+        <div id="bottom"></div>
         <!-- all the scripts -->
         <noscript>This site needs javascript!</noscript>
         <script src="js/bootstrap.min.js"></script>
